@@ -1,15 +1,30 @@
 
-contador1=0
+
 numero=0
 lista=[]
 contador = 0
-def listaNumeros(contador):
 
+
+
+def listaNumeros(contador):
+    contador1 = 0
+    suma = 0
+    media = 0
+    sumadesv=0
+    desv=0
     for i in range(contador):
         numero=int(input())
         lista.append(numero)
+        suma+=numero
+        media = suma / contador
+        sumadesv+=(numero)**2
+        desv=(sumadesv/numero-media**2)**(1/2)
         contador1+1
+
     print(lista)
 
+    print("La suma de los números es= ",suma)
+    print("La media de los números es= ",media)
+    print("La desviación típica es= ",desv)
 
 listaNumeros(5)
