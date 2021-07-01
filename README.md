@@ -1,0 +1,2 @@
+# bucleLista
+ejercicio de listas
