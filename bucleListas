@@ -1,0 +1,15 @@
+
+contador1=0
+numero=0
+lista=[]
+contador = 0
+def listaNumeros(contador):
+
+    for i in range(contador):
+        numero=int(input())
+        lista.append(numero)
+        contador1+1
+    print(lista)
+
+
+listaNumeros(5)
